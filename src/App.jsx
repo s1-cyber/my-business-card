@@ -1,89 +1,215 @@
 import "./App.css";
+import {
+  FaGithub,
+  FaTelegram,
+  FaWhatsapp,
+  FaDiscord,
+  FaCode,
+  FaRocket,
+  FaBrain,
+  FaLaptopCode,
+  FaGlobe,
+  FaUserTie,
+} from "react-icons/fa";
 
 function App() {
+  const socials = [
+    {
+      icon: <FaGithub />,
+      name: "GitHub",
+      link: "https://github.com/s1-cyber",
+    },
+    {
+      icon: <FaTelegram />,
+      name: "Telegram",
+      link: "https://t.me/q1nlan",
+    },
+    {
+      icon: <FaWhatsapp />,
+      name: "WhatsApp",
+      link: "https://wa.me/996600003351",
+    },
+    {
+      icon: <FaDiscord />,
+      name: "Discord",
+      link: "https://discord.com/users/1028179050524581928",
+    },
+  ];
+
+  const facts = [
+    {
+      icon: <FaCode />,
+      title: "IT Факт",
+      text: "Первый веб-сайт был опубликован в 1991 году.",
+    },
+    {
+      icon: <FaRocket />,
+      title: "Кодинг",
+      text: "Автоматизация помогает экономить время и уменьшать количество ошибок.",
+    },
+    {
+      icon: <FaBrain />,
+      title: "AI",
+      text: "Использую нейросети для обучения, поиска идей и ускорения разработки.",
+    },
+    {
+      icon: <FaBrain />,
+      title: "AI факт",
+      text: "Нейросети обучаются, анализируя огромные массивы данных и находя в них закономерности.",
+    },
+    {
+      icon: <FaBrain />,
+      title: "AI факт",
+      text: "Современные AI-модели помогают разработчикам писать код, находить ошибки и ускорять разработку.",
+    }
+  ];
+
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Git",
+    "REST API",
+    "AI / Neural Networks",
+    "Prompt Engineering",
+  ];
+
+  const languages = [
+    {
+      name: "Русский",
+      level: "Родной",
+    },
+    {
+      name: "Кыргызский",
+      level: "Родной",
+    },
+    {
+      name: "English",
+      level: "Intermediate (B1–B2)",
+    },
+  ];
+
+  const profile = [
+    "⚡ Быстро учусь",
+    "💻 Пишу чистый код",
+    "📈 1 год обучения",
+    "🤝 Open to Work",
+  ];
+
   return (
-    <div className="container">
+    <div className="page">
+      <div className="bg"></div>
+
       <header className="hero">
-        <div className="hero-text">
-          <h3>👋 Привет, меня зовут</h3>
-          <h1>Нурислам</h1>
+        <div className="online"></div>
 
-          <h2 className="title">Full-Stack Developer</h2>
+        <h3>BUILDING MODERN WEB & AI SYSTEMS</h3>
 
-          <p>
-            Превращаю идеи в быстрые, удобные и визуально чистые веб-продукты. Люблю чистый код, UX и адаптивность.
-          </p>
+        <h1>
+          Full-Stack
+          <br />
+          Developer
+        </h1>
 
-          <div className="contacts">
+        <p>
+          Создаю современные веб-приложения, интерфейсы и backend-решения.
+          Постоянно изучаю новые технологии, включая AI и автоматизацию.
+        </p>
+
+        <div className="socials">
+          {socials.map((item, index) => (
             <a
-              href="https://github.com/s1-cyber"
+              key={index}
+              href={item.link}
               target="_blank"
               rel="noreferrer"
-              className="contact-link"
             >
-              💻 GitHub
+              {item.icon}
+              <span>{item.name}</span>
             </a>
-
-            <a
-              href="https://t.me/q1nlan"
-              target="_blank"
-              rel="noreferrer"
-              className="contact-link"
-            >
-              💬 Telegram
-            </a>
-
-            <a
-              href="omorovnuris1@gmail.com"
-              className="contact-link"
-            >
-              ✉️ nuris.dev@example.com
-            </a>
-
-            <a href="tel:+996700000000" className="contact-link">
-              📞 +996 600 003 351
-            </a>
-          </div>
+          ))}
         </div>
       </header>
 
-      <section className="skills">
-        <h2>🚀 Мои навыки</h2>
+      <section className="content">
+        {/* LEFT */}
+        <div className="column">
+          <div className="block-title">
+            <FaLaptopCode />
+            <span>Факты</span>
+          </div>
 
-        <div className="cards">
-          <div className="card">
-            <h3>Frontend</h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-            </ul>
+          {facts.map((fact, index) => (
+            <div className="card" key={index}>
+              <h4>
+                {fact.icon}
+                {fact.title}
+              </h4>
+
+              <p>{fact.text}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* RIGHT */}
+        <div className="column">
+          <div className="block-title">
+            <FaUserTie />
+            <span>Профиль</span>
           </div>
 
           <div className="card">
-            <h3>Backend</h3>
-            <ul>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>REST API</li>
-            </ul>
+            <h4>Обо мне</h4>
+
+            {profile.map((item, index) => (
+              <div className="profile-item" key={index}>
+                {item}
+              </div>
+            ))}
           </div>
 
           <div className="card">
-            <h3>Языки</h3>
-            <ul>
-              <li>🇷🇺 Русский — свободно</li>
-              <li>🇰🇬 Кыргызский — родной</li>
-              <li>🇬🇧 Английский — средний (B1/B2)</li>
-            </ul>
+            <h4>⚡ Навыки</h4>
+
+            <div className="skills">
+              {skills.map((skill, index) => (
+                <span className="skill" key={index}>
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="card">
+            <h4>
+              <FaGlobe />
+              {" "}
+              Языки
+            </h4>
+
+            {languages.map((lang, index) => (
+              <div className="language" key={index}>
+                <span>{lang.name}</span>
+                <strong>{lang.level}</strong>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <footer>
-        <p>© 2026 Нурислам | Full-Stack Developer</p>
-      </footer>
+      <section className="projects">
+        <h2>🚀 Проекты</h2>
+
+        <div className="project-card">
+          <h3>Скоро здесь появятся мои проекты</h3>
+
+          <p>
+            React, Node.js и AI.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }

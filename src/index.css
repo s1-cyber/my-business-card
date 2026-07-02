@@ -1,35 +1,17 @@
-body {
-  margin: 10;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
-}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuris Portfolio</title>
+  </head>
 
-nav {
-  padding: 20px 40px;
-}
+  <body>
+    <!-- React сюда вставляет весь сайт -->
+    <div id="root"></div>
 
-main {
-  padding: 100px 40px;
-}
-
-h1 {
-  font-size: 60px;
-}
-
-p {
-  font-size: 20px;
-}
-
-button {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 10px;
-  background: cyan;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-section {
-  padding: 80px 40px;
-}
+    <!-- запуск React приложения -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+import photo from '../me.jpg'
+
+function App() {
+  return (
+    <div>
+      <img src={photo} alt="" />
+    </div>
+  )
+}
+
+export default App
