@@ -5,7 +5,6 @@ import {
   FaWhatsapp,
   FaDiscord,
   FaCode,
-  FaRocket,
   FaBrain,
   FaLaptopCode,
   FaGlobe,
@@ -79,7 +78,7 @@ function App() {
   const languages = [
     {
       name: "Русский",
-      level: "Родной",
+      level: "Свободный",
     },
     {
       name: "Кыргызский",
@@ -105,7 +104,7 @@ function App() {
       <header className="hero">
         <div className="online"></div>
 
-        <h3>BUILDING MODERN WEB & AI SYSTEMS</h3>
+        <h3>CODE • DESIGN • PERFORMANCE</h3>
 
         <h1>
           Full-Stack
