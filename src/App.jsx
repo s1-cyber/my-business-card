@@ -71,7 +71,7 @@ function App() {
     "Node.js",
     "Git",
     "REST API",
-    "AI / Neural Networks",
+    "AI",
     "Prompt Engineering",
   ];
 
@@ -202,10 +202,15 @@ function App() {
         <h2>🚀 Проекты</h2>
 
         <div className="project-card">
-          <h3>Скоро здесь появятся мои проекты</h3>
+          <h3>Чем я сейчас занимаюсь</h3>
 
           <p>
-            React, Node.js и AI.
+          🧠 Изучаю Full Stack разработку
+          ⚛ Углубляюсь в React
+          🟢 Осваиваю Node.js
+          🤖 Изучаю AI и автоматизацию
+          📚 Каждый день практикуюсь в программировании
+          💼 Открыт к стажировке и работе
           </p>
         </div>
       </section>
