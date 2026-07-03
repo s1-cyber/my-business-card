@@ -199,18 +199,9 @@ function App() {
       </section>
 
 <section className="projects">
-  <h2>🚀 Чем я сейчас занимаюсь</h2>
-  
-  <div className="project-card">
-    <div className="current-work">
-      <span>🧠 Изучаю Full Stack разработку</span>
-      <span>⚛ Углубляюсь в React</span>
-      <span>🟢 Осваиваю Node.js</span>
-      <span>🤖 Изучаю AI и автоматизацию</span>
-      <span>📚 Каждый день практикуюсь в программировании</span>
-      <span>💼 Открыт к стажировке и работе</span>
-    </div>
-  </div>
+ <footer class="footer">
+  <p>© 2026 — Built with React, focus & discipline.</p>
+</footer>
 </section>
     </div>
   );
