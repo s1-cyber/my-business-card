@@ -69,7 +69,6 @@ function App() {
     "JavaScript",
     "React",
     "Node.js",
-    "Git",
     "REST API",
     "AI",
     "Prompt Engineering",
@@ -86,7 +85,7 @@ function App() {
     },
     {
       name: "English",
-      level: "Intermediate (B1–B2)",
+      level: "Intermediate",
     },
   ];
 
