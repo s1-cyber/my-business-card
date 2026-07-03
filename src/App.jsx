@@ -21,12 +21,12 @@ function App() {
     {
       icon: <FaTelegram />,
       name: "Telegram",
-      link: "https://t.me/q1nlan",
+      link: "https://t.me/+cPH4iTbWrCgzYWEy",
     },
     {
       icon: <FaWhatsapp />,
       name: "WhatsApp",
-      link: "https://wa.me/996600003351",
+      link: "https://wa.me/996550033650",
     },
     {
       icon: <FaDiscord />,
