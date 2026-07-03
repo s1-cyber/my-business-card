@@ -198,20 +198,20 @@ function App() {
         </div>
       </section>
 
-      <section className="projects">
-        <h2>🚀 Чем я сейчас занимаюсь</h2>
-
-        <div className="project-card">
-          <p>
-          🧠 Изучаю Full Stack разработку
-          ⚛ Углубляюсь в React
-          🟢 Осваиваю Node.js
-          🤖 Изучаю AI и автоматизацию
-          📚 Каждый день практикуюсь в программировании
-          💼 Открыт к стажировке и работе
-          </p>
-        </div>
-      </section>
+<section className="projects">
+  <h2>🚀 Чем я сейчас занимаюсь</h2>
+  
+  <div className="project-card">
+    <div className="current-work">
+      <span>🧠 Изучаю Full Stack разработку</span>
+      <span>⚛ Углубляюсь в React</span>
+      <span>🟢 Осваиваю Node.js</span>
+      <span>🤖 Изучаю AI и автоматизацию</span>
+      <span>📚 Каждый день практикуюсь в программировании</span>
+      <span>💼 Открыт к стажировке и работе</span>
+    </div>
+  </div>
+</section>
     </div>
   );
 }

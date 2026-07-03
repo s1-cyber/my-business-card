@@ -317,7 +317,9 @@ body{
     padding-left:8px;
 
     color:#ff3355;
-}/* ===========================
+}
+
+/* ===========================
    PROJECTS
 =========================== */
 
@@ -354,9 +356,23 @@ body{
   margin-bottom: 15px;
 }
 
-.project-card p {
+.current-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.current-work span {
   color: #cfcfcf;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.7;
+  transition: .3s;
+}
+
+.current-work span:hover {
+  color: #ff3355;
+  transform: translateX(6px);
 }
 
 /* ===========================
