@@ -1,4 +1,4 @@
-/* ===== Google Font ===== */
+/* 1 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 *{
@@ -18,7 +18,7 @@ body{
     overflow-x:hidden;
 }
 
-/* ========= BACKGROUND ========= */
+/* фон */
 
 .bg{
     position:fixed;
@@ -31,7 +31,7 @@ body{
     #090909;
 }
 
-/* ========= PAGE ========= */
+/* обертка */
 
 .page{
     width:100%;
@@ -39,7 +39,7 @@ body{
     padding:60px 8%;
 }
 
-/* ========= HERO ========= */
+/* большой */
 
 .hero{
 
@@ -88,7 +88,7 @@ body{
     font-size:18px;
 }
 
-/* ========= SOCIAL ========= */
+/* сошл */
 
 .socials{
 
@@ -119,7 +119,9 @@ body{
     border:1px solid rgba(255,0,60,.2);
 
     transition:.35s;
-}/* ========= HOVER ========= */
+}
+
+/* МЫШКА */
 
 .socials a:hover{
 
@@ -136,7 +138,7 @@ body{
     font-size:22px;
 }
 
-/* ========= CONTENT ========= */
+/* контейнер */
 
 .content{
 
@@ -158,7 +160,7 @@ body{
     gap:22px;
 }
 
-/* ========= TITLE ========= */
+/* титл */
 
 .block-title{
 
@@ -177,7 +179,7 @@ body{
     margin-bottom:6px;
 }
 
-/* ========= CARD ========= */
+/* карта */
 
 .card{
 
@@ -232,7 +234,7 @@ body{
     line-height:28px;
 }
 
-/* ========= PROFILE ========= */
+/* профиль */
 
 .profile-item{
 
@@ -254,7 +256,7 @@ body{
     color:#ff3355;
 }
 
-/* ========= SKILLS ========= */
+/* скилы */
 
 .skills{
 
@@ -293,7 +295,7 @@ body{
     box-shadow:0 0 18px rgba(255,0,60,.45);
 }
 
-/* ========= LANGUAGES ========= */
+/* языки */
 
 .language{
 
@@ -319,9 +321,7 @@ body{
     color:#ff3355;
 }
 
-/* ===========================
-   PROJECTS
-=========================== */
+/* проект */
 
 .projects {
   margin-top: 70px;
@@ -375,9 +375,7 @@ body{
   transform: translateX(6px);
 }
 
-/* ===========================
-   ANIMATIONS
-=========================== */
+/* анимация */
 
 .hero,
 .card,
@@ -427,9 +425,7 @@ body{
   }
 }
 
-/* ===========================
-   SCROLLBAR
-=========================== */
+/* полоска */
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -448,9 +444,7 @@ body{
   background: #ff3355;
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+/* адаптация */
 
 @media (max-width: 1000px) {
 
