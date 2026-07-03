@@ -199,11 +199,9 @@ function App() {
       </section>
 
       <section className="projects">
-        <h2>🚀 Проекты</h2>
+        <h2>🚀 Чем я сейчас занимаюсь</h2>
 
         <div className="project-card">
-          <h3>Чем я сейчас занимаюсь</h3>
-
           <p>
           🧠 Изучаю Full Stack разработку
           ⚛ Углубляюсь в React
